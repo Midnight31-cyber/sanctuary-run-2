@@ -1,0 +1,510 @@
+{
+  "schema": "sanctuary-run-receipt/3",
+  "id": "97443544-61a5-46c5-a117-8e585c1005f4:ec65e817-889f-4b6c-beec-ba38c56c7583:2026-10-22",
+  "course": "CS110",
+  "event": "The New World",
+  "eventCode": "1ED063",
+  "day": "2026-10-22",
+  "timeZone": "America/Los_Angeles",
+  "player": "Daniel p",
+  "playerId": "ec65e817-889f-4b6c-beec-ba38c56c7583",
+  "team": "HelloWorld",
+  "participation": "team",
+  "teamCrest": 0,
+  "placement": {
+    "place": 3,
+    "prizePlace": 3,
+    "round": 4,
+    "scope": "event",
+    "final": true,
+    "points": 122.85
+  },
+  "prize": {
+    "place": 3,
+    "title": "Bronze Expedition",
+    "description": "Third-place prize announced by the Gamemaster.",
+    "image": ""
+  },
+  "teamMembers": [
+    {
+      "name": "Isaias Gonzalez",
+      "portrait": 3,
+      "subject": "css",
+      "character": "The Weaver"
+    },
+    {
+      "name": "Paul",
+      "portrait": 0,
+      "subject": "csharp",
+      "character": "The Pathfinder"
+    },
+    {
+      "name": "Mio",
+      "portrait": 2,
+      "subject": "html",
+      "character": "The Architect"
+    },
+    {
+      "name": "Daniel p",
+      "portrait": 4,
+      "subject": "javascript",
+      "character": "The Spark"
+    },
+    {
+      "name": "Jonathan's p",
+      "portrait": 1,
+      "subject": "wpf",
+      "character": "The Artificer"
+    }
+  ],
+  "teamPoints": 119.75,
+  "teamPenalties": [],
+  "teamRoundPoints": 22,
+  "hunt": {
+    "round": 3,
+    "combatClass": "Mage",
+    "damage": 91,
+    "strikes": 2,
+    "healing": 0,
+    "blocked": 0,
+    "defeats": 0,
+    "escapes": 1,
+    "teamKills": 1,
+    "teamBounty": 0.25,
+    "battles": [
+      {
+        "name": "Skyrend",
+        "location": "Frosthaven",
+        "region": "mountain",
+        "bounty": 0.25,
+        "myDamage": 0,
+        "mySupport": 0,
+        "myShare": 0,
+        "at": "2026-10-22T22:04:35.320Z"
+      }
+    ]
+  },
+  "siege": {
+    "round": 4,
+    "realm": "Sanctuary",
+    "wavesCompleted": 4,
+    "status": "wave",
+    "kills": 31
+  },
+  "combatCosts": {
+    "nodes": [
+      {
+        "id": "heartwood",
+        "name": "Heartwood core",
+        "role": "core"
+      },
+      {
+        "id": "iron",
+        "name": "Sanctuary iron",
+        "role": "core"
+      },
+      {
+        "id": "silver",
+        "name": "Moonsteel edge",
+        "role": "core"
+      },
+      {
+        "id": "life",
+        "name": "Life rune",
+        "role": "rune"
+      },
+      {
+        "id": "guard",
+        "name": "Guard rune",
+        "role": "rune"
+      },
+      {
+        "id": "force",
+        "name": "Force rune",
+        "role": "rune"
+      },
+      {
+        "id": "thread",
+        "name": "Oath thread",
+        "role": "binding"
+      },
+      {
+        "id": "rivet",
+        "name": "Runic rivet",
+        "role": "binding"
+      },
+      {
+        "id": "crystal",
+        "name": "Beacon crystal",
+        "role": "binding"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "heart-1",
+        "name": "Traveler’s Heart",
+        "kind": "health",
+        "level": 1,
+        "cost": 0.5,
+        "seconds": 30,
+        "nodes": [
+          "heartwood",
+          "life",
+          "thread"
+        ],
+        "description": "+20 maximum HP",
+        "effect": {
+          "maxHp": 20
+        }
+      },
+      {
+        "id": "armor-1",
+        "name": "Sentinel Weave",
+        "kind": "armor",
+        "level": 1,
+        "cost": 1,
+        "seconds": 45,
+        "nodes": [
+          "iron",
+          "guard",
+          "rivet"
+        ],
+        "description": "Absorb 3 damage from each creature response",
+        "effect": {
+          "armor": 3
+        }
+      },
+      {
+        "id": "weapon-1",
+        "name": "Runed Edge",
+        "kind": "weapon",
+        "level": 1,
+        "cost": 1,
+        "seconds": 60,
+        "nodes": [
+          "silver",
+          "force",
+          "crystal"
+        ],
+        "description": "+10% attack damage",
+        "effect": {
+          "attackPercent": 0.1
+        }
+      },
+      {
+        "id": "healing-1",
+        "name": "Restorer’s Sigil",
+        "kind": "healing",
+        "level": 1,
+        "cost": 1.5,
+        "seconds": 75,
+        "nodes": [
+          "heartwood",
+          "life",
+          "crystal"
+        ],
+        "description": "+10% healing strength",
+        "effect": {
+          "healPercent": 0.1
+        }
+      },
+      {
+        "id": "heart-2",
+        "name": "Heart of Sanctuary",
+        "kind": "health",
+        "level": 2,
+        "requires": "heart-1",
+        "cost": 2,
+        "seconds": 90,
+        "nodes": [
+          "heartwood",
+          "guard",
+          "thread"
+        ],
+        "description": "+40 maximum HP in total; replaces Traveler’s Heart",
+        "effect": {
+          "maxHp": 40
+        }
+      },
+      {
+        "id": "armor-2",
+        "name": "Bastion Plate",
+        "kind": "armor",
+        "level": 2,
+        "requires": "armor-1",
+        "cost": 2,
+        "seconds": 90,
+        "nodes": [
+          "iron",
+          "guard",
+          "crystal"
+        ],
+        "description": "Absorb 6 damage per creature response; replaces Sentinel Weave",
+        "effect": {
+          "armor": 6
+        }
+      },
+      {
+        "id": "weapon-2",
+        "name": "Champion’s Temper",
+        "kind": "weapon",
+        "level": 2,
+        "requires": "weapon-1",
+        "cost": 2,
+        "seconds": 120,
+        "nodes": [
+          "silver",
+          "force",
+          "rivet"
+        ],
+        "description": "+20% attack damage in total; replaces Runed Edge",
+        "effect": {
+          "attackPercent": 0.2
+        }
+      }
+    ],
+    "equipment": {
+      "maxHp": 100,
+      "armor": 0,
+      "attackPercent": 0,
+      "healPercent": 0,
+      "items": []
+    },
+    "wallet": {
+      "costPool": "team",
+      "earned": 10,
+      "spent": 0,
+      "available": 119.75,
+      "debt": 0
+    },
+    "ledger": [],
+    "jobs": []
+  },
+  "teamCombatCosts": [
+    {
+      "id": "f7748230-d963-4f31-b441-0f4efb3ab629",
+      "playerId": "fb58b3b8-14bd-4090-917d-f9f88f462b9b",
+      "teamId": "d0af8699-ac84-420a-9e59-4da393137128",
+      "round": 3,
+      "day": "2026-10-22",
+      "at": 1792706992097,
+      "scope": "team",
+      "points": 2,
+      "reason": "Defeat · Nivara"
+    },
+    {
+      "id": "e327f1f4-b149-4f5d-abf5-11e2c293eed3",
+      "playerId": "c9754c7c-334e-48da-b261-fd7bb4b14428",
+      "teamId": "d0af8699-ac84-420a-9e59-4da393137128",
+      "round": 3,
+      "day": "2026-10-22",
+      "at": 1792707135528,
+      "scope": "team",
+      "points": 2,
+      "reason": "Defeat · Nivara"
+    },
+    {
+      "id": "ba23eb5a-8352-4002-97f6-d108a3b1227e",
+      "playerId": "fb58b3b8-14bd-4090-917d-f9f88f462b9b",
+      "teamId": "d0af8699-ac84-420a-9e59-4da393137128",
+      "round": 3,
+      "day": "2026-10-22",
+      "at": 1792707258971,
+      "scope": "team",
+      "points": 0.5,
+      "reason": "Forge · Traveler’s Heart"
+    }
+  ],
+  "journey": {
+    "character": "The Spark",
+    "subject": "javascript",
+    "portrait": 4,
+    "clan": "Verdant Wardens",
+    "round": 4,
+    "realm": "Tideglass Coast",
+    "region": "coast",
+    "completedRound": 4,
+    "realmNote": "Last completed: round 4 / 2026-10-22"
+  },
+  "rewards": {
+    "scope": "event",
+    "basis": "shared-team",
+    "rewardPool": "One shared team reward pool; not a separate payout per member.",
+    "earned": 119.75,
+    "academicCap": 50,
+    "courseCreditEligible": 50,
+    "standing": {
+      "status": "review-required",
+      "potentialAllowance": 50,
+      "lateArrivals": 0,
+      "lateDeduction": 0,
+      "appliedLateDeduction": 0,
+      "courseCreditEligible": 50,
+      "mortal": false,
+      "reviewId": null,
+      "reviewedAt": null,
+      "attendance": "unreviewed",
+      "artifacts": "unreviewed",
+      "rewardValueRetained": true
+    },
+    "rewardOnlyPoints": 69.75,
+    "pointsPerSticker": null,
+    "stickers": null,
+    "unconvertedPoints": null,
+    "stickersPerUnit": 3,
+    "possibleUnits": null,
+    "stickersAfterUnits": null,
+    "requiresP2PAccount": true,
+    "fulfillment": "Gamemaster verification required. This record does not credit an account. Stickers exchanged for Units are spent, not awarded again."
+  },
+  "rewardRules": {
+    "academicCap": 50,
+    "capScope": "event",
+    "pointsPerSticker": null,
+    "stickersPerUnit": 3,
+    "lateJoinCost": 5,
+    "prizes": [
+      {
+        "place": 1,
+        "title": "Sanctuary Champion",
+        "description": "First-place prize announced by the Gamemaster.",
+        "image": ""
+      },
+      {
+        "place": 2,
+        "title": "Silver Expedition",
+        "description": "Second-place prize announced by the Gamemaster.",
+        "image": ""
+      },
+      {
+        "place": 3,
+        "title": "Bronze Expedition",
+        "description": "Third-place prize announced by the Gamemaster.",
+        "image": ""
+      }
+    ],
+    "prizeTitle": "Sanctuary Champion",
+    "prizeDescription": "The Gamemaster announces the prize for the winning team.",
+    "trophyImage": "",
+    "rules": "Points above the course-credit cap are reward-only. The Gatekeeper approves available rewards and rates, including Codex stickers or pantry items. Eligible coursework points may be saved for an approved later assignment. Three Codex stickers may exchange for one Unit with a verified Pathways to Pipelines account and Gatekeeper fulfillment."
+  },
+  "prizeEligible": true,
+  "prizeRule": "Team prizes require two or more members when the round starts. Solo travelers earn activity credit only.",
+  "status": "daily-target-met",
+  "roundResults": [
+    {
+      "round": 1,
+      "realm": "Tideglass Coast",
+      "prizePlace": 3,
+      "prizeEligible": true
+    },
+    {
+      "round": 2,
+      "realm": "Tideglass Coast",
+      "prizePlace": 2,
+      "prizeEligible": true
+    },
+    {
+      "round": 3,
+      "realm": "Not recorded",
+      "prizePlace": null,
+      "prizeEligible": true
+    },
+    {
+      "round": 4,
+      "realm": "Tideglass Coast",
+      "prizePlace": 4,
+      "prizeEligible": true
+    }
+  ],
+  "points": 10,
+  "dailyTarget": 10,
+  "additionalPoints": 0,
+  "awardIds": [
+    "84c7e8b4-8efc-4965-97e2-87e00e280493",
+    "4c0178f7-1929-455d-a961-1cc1f96831c4",
+    "b35f52ed-8af2-4f2c-a994-f4540f1998d1",
+    "6642bad0-7ba2-4d44-91c0-ab28c9f0b411",
+    "c03277b0-7ac3-46dd-b922-48eae4deadc7"
+  ],
+  "encounters": [
+    {
+      "title": "The Spark Engine",
+      "subject": "javascript",
+      "points": 2,
+      "round": 1,
+      "at": "2026-10-22T21:20:20.912Z"
+    },
+    {
+      "title": "The Two States",
+      "subject": "javascript",
+      "points": 2,
+      "round": 1,
+      "at": "2026-10-22T21:40:10.850Z"
+    },
+    {
+      "title": "The Supply Function",
+      "subject": "javascript",
+      "points": 2,
+      "round": 2,
+      "at": "2026-10-22T21:56:38.144Z"
+    },
+    {
+      "title": "The Spark Engine · Flame Conclave",
+      "subject": "javascript",
+      "points": 2,
+      "round": 4,
+      "at": "2026-10-22T22:21:51.176Z"
+    },
+    {
+      "title": "The Beacon Switch · Flame Conclave",
+      "subject": "javascript",
+      "points": 2,
+      "round": 4,
+      "at": "2026-10-22T22:23:47.350Z"
+    }
+  ],
+  "issuedAt": "2026-10-22T22:31:09.079Z",
+  "records": "Verified activity record; save this receipt in your course GitHub repository and submit the repository link through Canvas.",
+  "covenant": {
+    "version": "presence-2026-10-21",
+    "title": "The Covenant of Presence",
+    "pledge": "Remain present in the realm. Bring back the work that proves your journey.",
+    "review": "Coursework use requires Gatekeeper verification of attendance, required artifacts and any deductions. The amount shown is a potential allowance, not a posted grade or a spendable account balance.",
+    "conditions": [
+      {
+        "title": "Keep your place in the realm",
+        "text": "A team member who misses a class day or does not submit required assignment artifacts loses the coursework use of their team-earned points. Those points become Mortal Points: the game achievement and other reward value remain, but the allowance of up to 50 points for coursework is void."
+      },
+      {
+        "title": "Arrive with your company",
+        "text": "Each late arrival deducts 15 points from your personal coursework allowance after the cap: 50 becomes 35, then 20. The allowance cannot fall below zero. Your team’s score and prize standings stay unchanged. Attendance is verified in class; connection problems are not proof of lateness or absence."
+      },
+      {
+        "title": "Choose when to use your award",
+        "text": "You do not have to use eligible points on today’s assignment. You may save them for an instructor-approved final project or approved rewards, such as Codex stickers or pantry items. The Gatekeeper confirms eligibility, available rewards and the exchange rate before use."
+      },
+      {
+        "title": "Carry your record with you",
+        "text": "Keep this certificate and its signed receipt. A Learners.cloud account is optional for class participation. Account storage is planned; this certificate does not deposit points, issue Units or guarantee an exchange."
+      }
+    ],
+    "status": "review-required",
+    "standing": {
+      "status": "review-required",
+      "potentialAllowance": 50,
+      "lateArrivals": 0,
+      "lateDeduction": 0,
+      "appliedLateDeduction": 0,
+      "courseCreditEligible": 50,
+      "mortal": false,
+      "reviewId": null,
+      "reviewedAt": null,
+      "attendance": "unreviewed",
+      "artifacts": "unreviewed",
+      "rewardValueRetained": true
+    },
+    "automaticAttendanceDetection": false
+  },
+  "signature": "bf87d69322e49ea4313897e1d13ef730dbcdf9e270b4bae543b613bbf1dd08a4"
+}
